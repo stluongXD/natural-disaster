@@ -5,7 +5,6 @@ We will be working with the Fema Housing assistance data for owners and renters.
 <br>
 Other potential audience are...
 - Public health organization
-- Insurance companies
 - People that live disaster areas / trying to move to the location
 - Weather organizations 
 - Researchers 
