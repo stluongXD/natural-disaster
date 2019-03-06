@@ -1,19 +1,15 @@
 # Project Proposal
 
 ## Project Description
-We will be working with the Fema Housing assistance data for owners and renters. FEMA (Federal Emergency Management Agency) collected this data and we will be accessing this data through their API. Our main target audience are insurance companies who may want to use the information to determine how much they should charge their clients depending on where they live and the frequency disasters occur in that area. 
-<br>
-Other potential audience are...
-- Public health organization
-- People that live disaster areas / trying to move to the location
-- Weather organizations 
-- Researchers 
+We will be working with Homicide Reports from 1980-2017. The data comes from a non-profit group called the [Murder Accountability Project](https://www.google.com/url?q=http://www.murderdata.org/&sa=D&ust=1551846904135000&usg=AFQjCNE4VMjLHtt3KRptrZ-mb94n9bsp2g) which tracks unsolved homicides from the federal, state, and local government. This data exist because America do a terrible job at accounting and documenting unsolved homicides within the U.S. The organizes of the Murder Accountability Project wanted to collect this data in order to create a more accurate record of unsolved murders. We will be accessing this data through a csv file which the Murder Accountability Project has published. The data is updated by retired law enforcement investigators, investigative journalists, criminologists and other experts on various aspects of homicide who work for the organization.  
 
+## Target Audience
+The city officials can use this to look at the homicide trends across the country. This data provides information on the relationship between victim and their killers and also the intent of the murder. This will help city officials establish list of potential signs/cues to spot future murders, which then help lower crime rates in cities. By understanding the data, city officials can develop a programs that can potentially help people get out of those situations. 
 
 ## Three questions our project will answer are…
-1. Which area required the most assistance from Fema?
-2. Is there a significant difference in requests between homeowners and renters?
-3. How much money do people usually receive from Fema?
+1. What is the preferred weapon of choice in murders?
+2. Which race is more likely to experience a certain type of murder? Ex. Are white people more likely to die from a lover triangle?
+3. Which race is more likely to experience a certain type of murder? Ex. Are white people more likely to die from a lover triangle?
 
 ## Technical Description
-We will be reading in our data through an API. We will probably need to join different datasets together so that we can have enough information for our project. We may also need to filter the data so that we can specifically narrow down and talk about a specific group of people who were affected by a disaster. Since we are using an API, we will be using the httr and jsonlite. We are not sure if we will need to use a new library for our project yet. We anticipate making 3 different meaningful charts will be a challenge because we are worried that we might not have enough information from our API. 
+We will be in our data with a CSV file. I noticed that some of the data cells are are empty or have “Unknown” in them so I anticipate that we will need to clean the data. We anticipate we will use leaflet to create maps and ggplot to create the charts. We will also need to use Shiny to create the rendered page for our project. We anticipate a major challenge is wrangling and cleaning the data because there is so much recorded and the CSV file is very large which will make it slightly difficult to analyze. 
