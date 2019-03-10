@@ -37,7 +37,7 @@ races_vs_homicide_circumstance_plot <- function(
     data = filtered_info,
     aes(x = OffRace, y = occurance)
   ) +
-    xlab("Race") +
+    xlab("Offender Race") +
     ylab("Number of Homicide") +
     ggtitle(paste0("Homicide reason: ", selected_circumstance)) +
     geom_bar(stat = "identity", fill = "steelblue") +
