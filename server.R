@@ -1,7 +1,7 @@
 # homicide server
 
 library(dplyr)
-source("scripts/race_vs_murder.R")
+source("scripts/age.R")
 source("scripts/overview_chart.R")
 source("scripts/intro_page.R")
 
