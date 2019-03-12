@@ -3,6 +3,7 @@
 library(dplyr)
 source("scripts/race_vs_murder_chart.R")
 source("scripts/overview_chart.R")
+source("scripts/intro_page.R")
 
 shinyServer(
   function(input, output) {
