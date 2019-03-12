@@ -30,6 +30,25 @@ overview_graph <- function(dataset, state_input, year_inputs) {
       )
     )
 
-
+  scatter <- plot_ly(filter_data,
+                       x = filter_data$Year,
+                       y = filter_data$n,
+                       type = "scatter",
+                       mode = "line",
+                       opacity = .8,
+                       hoverinfo = "y"
+  ) %>%
+    layout(
+      title = paste0("Homicides in ", state_input, " from ", year_inputs[1], "-", year_inputs[2]),
+      xaxis = list(
+        title = "Year",
+        showticklabels = TRUE
+      ),
+      yaxis = list(
+        title = "Number of Homicides",
+        showticklabels = TRUE
+      )
+    )
+  
   bar_graph
 }
