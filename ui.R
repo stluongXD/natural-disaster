@@ -1,6 +1,6 @@
 # homicide ui
 library(shiny)
-
+library(plotly)
 
 shinyUI(
   fluidPage(
@@ -64,17 +64,16 @@ shinyUI(
     tabPanel(
       tags$h2("Race Vs. Homicide Circumstances"),
       sidebarLayout(
-
+        
         # Side panel to select race
         sidebarPanel(
           # check box to select race
-          checkboxGroupInput(
+          selectInput(
             "race",
             label = "Race",
-            choices = unique(homicide_circumstance$OffRace),
-            selected = "White"
+            choices = sort(unique(homicide_circumstance$OffRace))
           ),
-
+          
           # drop down menu to select circumstances
           selectInput(
             "circumstances",
@@ -82,10 +81,10 @@ shinyUI(
             choices = sort(unique(homicide_circumstance$Circumstance))
           )
         ),
-
+        
         # shows bar plot
         mainPanel(
-          plotOutput("bar")
+          plotlyOutput("scatter")
         )
       )
     )
