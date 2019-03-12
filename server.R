@@ -4,6 +4,7 @@ library(dplyr)
 source("scripts/age.R")
 source("scripts/overview_chart.R")
 source("scripts/intro_page.R")
+source("scripts/relationship_chart.R")
 
 shinyServer(
   function(input, output) {
@@ -16,12 +17,16 @@ shinyServer(
         )
       )
     })
-    
+
     # calls function to create plot
     output$overview <- renderPlotly({
       overview_graph(
         homicide_circumstance, input$state_name, input$years_input
       )
+    })
+
+    output$pie <- renderPlotly({
+      pie_graph(homicide_circumstance, input$age, input$relation)
     })
   }
 )
