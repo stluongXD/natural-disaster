@@ -1,4 +1,4 @@
-#<h1> Homocide Report <h1> 
+#<h1> Homicide Report <h1> 
 
 #<p> This website contains the data from <a herf = http://www.murderdata.org/> Murder Accountability Project. 
 #This data includes unsolved homicides from the federal, state, and local government This data exist because America do a terrible job at accounting and documenting unsolved homicides within the U.S. The organization of the Murder Accountability Project wanted to collect this data in order to create a more accurate record of unsolved murders. We accessed this data through a csv file which the Murder Accountability Project has published. The data is updated by retired law enforcement investigators, investigative journalists,
