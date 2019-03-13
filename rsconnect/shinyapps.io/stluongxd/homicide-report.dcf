@@ -1,0 +1,12 @@
+name: homicide-report
+title: homicide-report
+username:
+account: stluongxd
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 785723
+bundleId: 1935280
+url: https://stluongxd.shinyapps.io/homicide-report/
+when: 1552442775.50438
+asMultiple: FALSE
+asStatic: FALSE
