@@ -47,12 +47,12 @@ shinyUI(
         sidebarLayout(
           sidebarPanel(
             # Enter State Name
-            textInput("state_name", label = "Type Full State Name", value = "California"),
+            textInput("state_name", label = "Type Full State Name", value = "Washington"),
 
             # Slider to select years
             sliderInput("years_input",
               label = "Timeline to Graph", min = 1976,
-              max = 2017, value = c(2000, 2009), sep = ""
+              max = 2017, value = c(1990, 2010), sep = ""
             )
           ),
 

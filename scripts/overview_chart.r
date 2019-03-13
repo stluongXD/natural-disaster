@@ -5,7 +5,7 @@ library(plotly)
 overview_graph <- function(dataset, state_input, year_inputs) {
 
   # filters data down to the years and state selected
-  filter_data <- homicide_data %>%
+  filter_data <- dataset %>%
     filter(State == state_input, Year >= year_inputs[1], Year <= year_inputs[2]) %>%
     group_by(Year) %>%
     count()
