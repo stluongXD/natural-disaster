@@ -16,7 +16,8 @@ overview_graph <- function(dataset, state_input, year_inputs) {
     y = filter_data$n,
     type = "bar",
     opacity = .8,
-    hoverinfo = "y"
+    hoverinfo = "y",
+    marker = list(color = "Steel Blue")
   ) %>%
     layout(
       title = paste0("Homicides in ", state_input, " from ", year_inputs[1], "-", year_inputs[2]),

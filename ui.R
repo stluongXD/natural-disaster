@@ -55,14 +55,17 @@ shinyUI(
                 tags$p()),
        tags$div(tags$h3(tags$b("Maya Klitsner")),
                 tags$img(),
-                tags$p()),
+                tags$p(tags$b("Major:"), "Human Centered Design and Engineering"),
+                tags$p(tags$b("Year:"),  "Junior"),
+                tags$p("Info 201 reminded me why I like coding and how I can improve my own
+                       projects to have data driven visualizations")),
        tags$div(tags$h3(tags$b("Terra Huang")),
                 tags$img(),
                 tags$p()),
        tags$div(tags$h3(tags$b("Kirara Nagatsuka")),
                 tags$img(src = "https://scontent-sea1-1.cdninstagram.com/vp/23cd4be8fc0f0e1f73fa23a28fddba0b/5CE665D9/t51.2885-19/s150x150/51439657_714727105587494_3301035323093417984_n.jpg?_nc_ht=scontent-sea1-1.cdninstagram.com", width = "150px", height = "150px"),
-                tags$p("Major : Communications"),
-                tags$p("Year : Junior"),
+                tags$p(tags$b("Year:"), "Communications"),
+                tags$p(tags$b("Year:"), "Junior"),
                 tags$p("Info 201 taught me how to visualize data.")
                 )),
       tabPanel(
