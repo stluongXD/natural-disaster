@@ -24,13 +24,11 @@ shinyUI(
         tags$div(),
         tags$p("Through the charts, you would be able to answer the following questions."),
         tags$ol(
-         tags$li("What is the preferred weapon of choice in murders?"),
+         tags$li("Does Age relate to the type of death they experience? "),
          tags$li("Which race is more likely to experience a certain type of murder? 
                   Do people with specific race tend to share a similar incident?
                  (For example, do white people experience death because of a love triangle?)"),
-        tags$li("Is gender connected to type of murder committed? 
-                 Does one gender experience a specific type of death?
-                (For example, do women experience deaths related to robbery often?)")
+        tags$li("What is the preferred weapon of choice in murders?")
 
         ),
         tags$div(),
