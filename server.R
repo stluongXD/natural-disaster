@@ -21,7 +21,7 @@ shinyServer(
     # calls function to create plot
     output$overview <- renderPlotly({
       overview_graph(
-        homicide_circumstance, input$state_name, input$years_input
+        case_info, input$state_name, input$years_input
       )
     })
 
