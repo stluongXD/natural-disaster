@@ -9,7 +9,7 @@ shinyUI(
       tags$h1("Homicide Report"),
       tabPanel(
         tags$h2("Introduction"),
-        tags$h3("Overview of Homicide Report"),
+        tags$h3("Background of Homicide Report"),
         tags$p(
           "This website contains the data from the",
           tags$a(herf = "http://www.murderdata.org", "Murder Accountability Project"),
@@ -58,7 +58,12 @@ shinyUI(
 
           # shows bar plot
           mainPanel(
-            plotlyOutput("overview")
+            plotlyOutput("overview"),
+            tags$h3("Insight"),
+            tags$p("While looking at the graph, in many states you can see that there is a slow decline
+                    starting in 1995. After doing some research, I discovered that President Bill Clinton 
+                    created a bill that increased the funding of law enforcement across the country. This
+                    increase in funding was shown to decrease crime rates for multiple years.")
           )
         )
       ),
