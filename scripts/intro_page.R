@@ -17,13 +17,13 @@ intro <- function(print) {
 # 
 # tags$p("Through the charts, you would be able to answer the following questions."))
 
-# <li> 1.	What is the preferred weapon of choice in murders?
+# <li> 1.	Is age realted to the type of death they experience? 
 #       #2.	Which race is more likely to experience a certain type of murder? </li>
 # 
 # <p> Do people with specific race tend to share a similar incident?
 # For example, do white people experience death because of a love triangle? </p>
 # 
-# <li>Is gender connected to type of murder committed? </li>
+# <li>What is the preferred weapon of choice in murders? </li>
 # 
 # <p> Does one gender experience a specific type of death?
 # For example, do women experience deaths related to robbery often? </p>
