@@ -9,31 +9,31 @@ shinyUI(
       tags$h1("Homicide Report"),
       tabPanel(
         tags$h2("Introduction"),
-        tags$h3("Background of Homicide Report"),
+        tags$h4(tags$b("Overview of Homicide Report")),
         tags$p(
           "This website contains the data from the",
           tags$a(herf = "http://www.murderdata.org", "Murder Accountability Project"),
           "This data includes unsolved homicides from the federal, state, and local government.
                 This data exist because America do a terrible job at accounting and documenting unsolved
                 homicides within the U.S. The organization of the Murder Accountability Project wanted to
-                collect this data in order to create a more accurate record of unsolved murders. 
+                collect this data in order to create a more accurate record of unsolved murders.
                 We accessed this data through a csv file which the Murder Accountability Project has published.
                 The data is updated by retired law enforcement investigators, investigative journalists,
                criminologists and other experts on various aspects of homicide who work for the organization."
         ),
-        tags$div(),
-        tags$p("Through the charts, you would be able to answer the following questions."),
+        tags$img(src = "http://static-29.sinclairstoryline.com/resources/media/143863df-44fd-413f-942a-21e09595fe8c-large16x9_crimescene.jpg?1551998679500", width = "250px", height = "250px"),
+        tags$div(
+          tags$h4("What questions will be answered"),
         tags$ol(
-         tags$li("What is the preferred weapon of choice in murders?"),
-         tags$li("Which race is more likely to experience a certain type of murder? 
+         tags$li("Does Age relate to the type of death they experience? "),
+         tags$li("Which race is more likely to experience a certain type of murder?
                   Do people with specific race tend to share a similar incident?
                  (For example, do white people experience death because of a love triangle?)"),
-        tags$li("Is gender connected to type of murder committed? 
-                 Does one gender experience a specific type of death?
-                (For example, do women experience deaths related to robbery often?)")
+        tags$li("What is the preferred weapon of choice in murders?")
 
-        ),
-        tags$div(),
+        )),
+        tags$div(
+          tags$h4("Who is this for?"),
         tags$p("By recognizing the data analyzation above following people may have a greater impact;
                The city officials can use this to look at the homicide trends across the country.
                This data provides information on the relationship between victim and their killers and also the intent of the murder.
@@ -41,6 +41,30 @@ shinyUI(
                which then help lower crime rates in cities. By understanding the data, city officials can develop a program that can potentially
                help people get out of those situations.")
       ),
+      tags$div(
+        tags$h4("Why are we doing this?"),
+                tags$p("By understanding this data, we wanted to learn about the relationships between homicides,
+                       and gun violence. In addition, by finding out what aspects create tendency among others,
+                       it could become a source to lessen a tragedy and improve the safety of others.")
+      )
+      ),
+      tabPanel(
+        tags$h2("About us"),
+       tags$div(tags$h3(tags$b("Steven Luong")),
+                tags$img(),
+                tags$p()),
+       tags$div(tags$h3(tags$b("Maya Klitsner")),
+                tags$img(),
+                tags$p()),
+       tags$div(tags$h3(tags$b("Terra Huang")),
+                tags$img(),
+                tags$p()),
+       tags$div(tags$h3(tags$b("Kirara Nagatsuka")),
+                tags$img(src = "https://scontent-sea1-1.cdninstagram.com/vp/23cd4be8fc0f0e1f73fa23a28fddba0b/5CE665D9/t51.2885-19/s150x150/51439657_714727105587494_3301035323093417984_n.jpg?_nc_ht=scontent-sea1-1.cdninstagram.com", width = "150px", height = "150px"),
+                tags$p("Major : Communications"),
+                tags$p("Year : Junior"),
+                tags$p("Info 201 taught me how to visualize data.")
+                )),
       tabPanel(
         tags$h2("Overview of Homicides"),
         # Side panel to select state and years
@@ -61,7 +85,7 @@ shinyUI(
             plotlyOutput("overview"),
             tags$h3("Insight"),
             tags$p("While looking at the graph, in many states you can see that there is a slow decline
-                    starting in 1995. After doing some research, I discovered that President Bill Clinton 
+                    starting in 1995. After doing some research, I discovered that President Bill Clinton
                     created a bill that increased the funding of law enforcement across the country. This
                     increase in funding was shown to decrease crime rates for multiple years.")
           )

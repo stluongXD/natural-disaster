@@ -13,3 +13,5 @@ The city officials can use this to look at the homicide trends across the countr
 
 ## Technical Description
 We will be in our data with a CSV file. I noticed that some of the data cells are are empty or have “Unknown” in them so I anticipate that we will need to clean the data. We anticipate we will use leaflet to create maps and ggplot to create the charts. We will also need to use Shiny to create the rendered page for our project. We anticipate a major challenge is wrangling and cleaning the data because there is so much recorded and the CSV file is very large which will make it slightly difficult to analyze. 
+
+Rendered version of project can be seen [here](https://stluongxd.shinyapps.io/homicide-report/)
