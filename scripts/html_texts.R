@@ -85,7 +85,7 @@ about_maya <- tags$div(
   tags$p(tags$b("Year:"), "Junior"),
   tags$p(
     "Info 201 reminded me why I like coding and how I can improve my own
-    projects to have data driven visualizations")
+    projects to have data driven visualizations.")
 )
 
 about_terra <- tags$div(
@@ -110,11 +110,15 @@ about_kirara <- tags$div(
 homicide_overview_insight <- tags$div(
   tags$h3("Insight"),
   tags$p(
-    "While looking at the graph, in many states you can see that there is a
-    slow decline starting in 1995. After doing some research, I discovered that
-    President Bill Clinton created a bill that increased the funding of law
+    "This graph shows an overview of the total amount of homicides in a specific
+    state. You can select a state and a range of years to see overall trends.
+    While looking at the graph, in many states you can see that there is a
+    slow decline of homicides starting in 1995. After doing some research,
+    I discovered that President Bill Clinton created the Violent Crime Control
+    and Law Enforcement Act that increased the funding of law
     enforcement across the country. This increase in funding was shown to
-    decrease crime rates for multiple years.")
+    decrease crime rates for multiple years. You can read more about the bill and it's impacts ",
+    tags$a(href = "https://www.theatlantic.com/politics/archive/2016/04/crime-bill-legacy/478089/", "here."))
 )
 
 # Insight gained from age scatter plot

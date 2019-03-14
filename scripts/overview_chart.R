@@ -1,7 +1,6 @@
 library(dplyr)
 library(plotly)
 
-
 overview_graph <- function(dataset, state_input, year_inputs) {
 
   # filters data down to the years and state selected
@@ -16,7 +15,8 @@ overview_graph <- function(dataset, state_input, year_inputs) {
     y = filter_data$n,
     type = "bar",
     opacity = .8,
-    hoverinfo = "y",
+    text = paste("Year:", filter_data$Year, "<br>Homicides:", filter_data$n),
+    hoverinfo = "text",
     marker = list(color = "Steel Blue")
   ) %>%
     layout(

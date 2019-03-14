@@ -29,13 +29,15 @@ shinyUI(
         # Side panel to select state and years
         sidebarLayout(
           sidebarPanel(
-            # Enter State Name
-            textInput(
+            # Select state to view
+            selectInput(
               "state_name",
-              label = "Type Full State Name",
-              value = "Washington"
-            ),
-
+              label = "Select State Name",
+              choices = sort(unique(case_info$State)), 
+              selected = "Washington",
+              multiple = FALSE,
+              selectize = TRUE),
+            
             # Slider to select years
             sliderInput("years_input",
               label = "Timeline to Graph", min = 1976,
@@ -84,7 +86,7 @@ shinyUI(
       ),
       # creates a new tab
       tabPanel(
-        tags$h2("Murder's Relationship with victim Vs. The Weapon"),
+        tags$h2("Murder's Relationship With Victim Vs. The Weapon"),
         sidebarLayout(
 
           # Side panel to select race
