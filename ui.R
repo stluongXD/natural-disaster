@@ -33,11 +33,11 @@ shinyUI(
             selectInput(
               "state_name",
               label = "Select State Name",
-              choices = sort(unique(case_info$State)), 
+              choices = sort(unique(case_info$State)),
               selected = "Washington",
               multiple = FALSE,
               selectize = TRUE),
-            
+
             # Slider to select years
             sliderInput("years_input",
               label = "Timeline to Graph", min = 1976,
@@ -100,19 +100,21 @@ shinyUI(
               selected = "Husband"
             ),
 
+            age_range_error,
+
             # select age range
             sliderInput(
               "age",
-              label = "Murder's age",
+              label = "Murder's Age",
               min = range(homicide_circumstance$OffAge)[1],
               max = range(homicide_circumstance$OffAge)[2],
               value = range(homicide_circumstance$OffAge)
-            ),
-            weapon_relationship_insight # insight gained from weapon pie chart
+            )
           ),
 
           mainPanel(
-            plotlyOutput("pie")
+            plotlyOutput("pie"),
+            weapon_relationship_insight # insight gained from weapon pie chart
           )
         )
       )

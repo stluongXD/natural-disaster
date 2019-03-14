@@ -90,7 +90,7 @@ about_maya <- tags$div(
 
 about_terra <- tags$div(
   tags$h3(tags$b("Terra Huang")),
-  tags$img(src = "TerraPic.jpg", width = "200px", height = "150px"),
+  tags$img(src = "TerraPic.jpg", width = "250px", height = "150px"),
   tags$p(tags$b("Year:"), "Communications"),
   tags$p(tags$b("Year:"), "Sophomore"),
   tags$p(
@@ -141,9 +141,16 @@ age_relationship_insight <- tags$div(
 
 # Insight gained from weapon pie chart
 weapon_relationship_insight <- tags$div(
-  tags$h3("Pie Display"),
+  tags$h3("Insight"),
   tags$p(
-    "The chart display the percentage of weapon usage 
-    and the number of people killed with those weapons"
+    "Across most relationships, the preferred weapon of choice to commit
+    homicides are handguns followed by knife and other cutting utensils. 
+    The only exception is the common law husband relationship where the 
+    preferred weapon is a knife. Another observation I noticed was that murders 
+    murdering their mothers had the lowest handgun usage rate. Also, the weapon 
+    distrubution for killing mothers were more evenly distributed compared 
+    to others."
     )
 )
+#no age data available 
+age_range_error <- tags$i("No Map Appearance -> Reselect Age Range")
