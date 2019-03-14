@@ -1,5 +1,4 @@
 # homicide server
-
 library(dplyr)
 source("scripts/age.R")
 source("scripts/overview_chart.R")
