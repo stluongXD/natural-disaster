@@ -7,9 +7,9 @@ We will be working with Homicide Reports from 1980-2017. The data comes from a n
 The city officials can use this to look at the homicide trends across the country. This data provides information on the relationship between victim and their killers and also the intent of the murder. This will help city officials establish list of potential signs/cues to spot future murders, which then help lower crime rates in cities. By understanding the data, city officials can develop a programs that can potentially help people get out of those situations. 
 
 ## Three questions our project will answer are…
-1. What is the preferred weapon of choice in murders?
-2. Which race is more likely to experience a certain type of murder? Ex. Are white people more likely to die from a lover triangle?
-3. Is gender related to the type of murder committed?
+1. What is the general trend in homicides? Is the homicide rate decreasing?
+2. Does age relate to the type of death they experience? 
+3. What is the preferred weapon of choice in murders?
 
 ## Technical Description
 We will be in our data with a CSV file. I noticed that some of the data cells are are empty or have “Unknown” in them so I anticipate that we will need to clean the data. We anticipate we will use leaflet to create maps and ggplot to create the charts. We will also need to use Shiny to create the rendered page for our project. We anticipate a major challenge is wrangling and cleaning the data because there is so much recorded and the CSV file is very large which will make it slightly difficult to analyze. 
