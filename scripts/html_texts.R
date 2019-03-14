@@ -57,7 +57,10 @@ purpose <- tags$div(
     "By understanding this data, we wanted to learn about the relationships
     between homicides, and gun violence. In addition, by finding out what
     aspects create tendency among others, it could become a source to lessen a
-    tragedy and improve the safety of others."
+    tragedy and improve the safety of others. Steven and Terra are especially 
+    interested in this data because Steven is a big fan of How To Get Away With
+    Murder while Terra is a big CSI fan; they enjoy the drama of homicide as 
+    described in shows which is why we chose this dataset"
     )
 )
 
@@ -118,10 +121,13 @@ homicide_overview_insight <- tags$div(
 age_relationship_insight <- tags$div(
   tags$h3("Insight"),
   tags$p(
-    "While looking at the graphs by changing the offender's race or the 
-    circumstnaces of the murder, the plots do not seem to be random which
+    "This plot exist because we were curious if there was a connection
+    between the victim and offender's age. We also wanted to know if different
+    factors such as race and and circumstances played a role in who gets killed.
+    While looking at the graphs by changing the offender's race or the 
+    circumstnaces of the murder, the points seem to be random which
     suggests that there is no visible correlation between the offender's age
-    and victims age. However, I did noticed that homicides due to lovers 
+    and victims age. However, I did noticed for homicides due to lovers 
     triangles, the victims and offenders are usually relatively close in age.
     There were many outliers, but the general trend suggests that as the 
     offenders' age goes up, so does the victims'. This makes sense because 

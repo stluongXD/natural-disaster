@@ -32,8 +32,8 @@ affected_parties_age_plot <- function(
   ) %>%
     layout(
       title = "Age Distribution of Homicide Victims and Offenders",
-      xaxis = list(title = "Offender's Age"),
-      yaxis = list(title = "Victim's Age")
+      xaxis = list(title = "Offender's Age (Years)"),
+      yaxis = list(title = "Victim's Age (Years)")
     )
   scatter_plot
 }

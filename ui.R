@@ -61,7 +61,7 @@ shinyUI(
             # drop down menu to select race
             selectInput(
               "race",
-              label = "Race",
+              label = "Offender's Race",
               choices = sort(unique(homicide_circumstance$OffRace)),
               selected = "White"
             ),
