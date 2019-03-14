@@ -84,7 +84,7 @@ shinyUI(
       ),
       # creates a new tab
       tabPanel(
-        tags$h2("Murder's Relationship with victim Vs. The Weapon"),
+        tags$h2("Murder's Relationship with Victim Vs. The Weapon"),
         sidebarLayout(
 
           # Side panel to select race
@@ -97,20 +97,22 @@ shinyUI(
               choices = unique(homicide_circumstance$Relationship),
               selected = "Husband"
             ),
+            
+            age_range_error,
 
             # select age range
             sliderInput(
               "age",
-              label = "Murder's age",
+              label = "Murder's Age",
               min = range(homicide_circumstance$OffAge)[1],
               max = range(homicide_circumstance$OffAge)[2],
               value = range(homicide_circumstance$OffAge)
-            ),
-            weapon_relationship_insight # insight gained from weapon pie chart
+            )
           ),
 
           mainPanel(
-            plotlyOutput("pie")
+            plotlyOutput("pie"),
+            weapon_relationship_insight # insight gained from weapon pie chart
           )
         )
       )

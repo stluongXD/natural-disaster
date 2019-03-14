@@ -3,14 +3,6 @@ library(plotly)
 
 options(warn = -1)
 
-m <- list(
-  l = 40,
-  r = 40,
-  b = 50,
-  t = 50,
-  pad = 0
-)
-
 pie_graph <- function(data, slider, selecter) {
   data <- homicide_circumstance %>%
     filter(OffAge > slider[1], OffAge < slider[2])
@@ -24,10 +16,11 @@ pie_graph <- function(data, slider, selecter) {
     filter(Relationship == selecter)
   
   pie <-
-    plot_ly(filtered_data, labels = ~Weapon, values = ~n, type = "pie") %>%
+    plot_ly(filtered_data, labels = ~Weapon, values = ~n, type = "pie",
+            textposition = "inside",
+            text = ~ paste("Num killed:", n, "<br>")) %>%
     layout(
-      title = "Percentage of weapon usage",
-      autosize = F, width = 800, height = 800, margin = m
+      title = "Percentage of Weapon Usage"
     )
   
   pie
