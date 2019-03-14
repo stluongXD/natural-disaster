@@ -87,7 +87,7 @@ about_maya <- tags$div(
 
 about_terra <- tags$div(
   tags$h3(tags$b("Terra Huang")),
-  tags$img(src = "TerraPic.jpg", width = "150px", height = "150px"),
+  tags$img(src = "TerraPic.jpg", width = "200px", height = "150px"),
   tags$p(tags$b("Year:"), "Communications"),
   tags$p(tags$b("Year:"), "Sophomore"),
   tags$p(
