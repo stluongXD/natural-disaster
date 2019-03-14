@@ -5,8 +5,8 @@ account: stluongxd
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 785723
-bundleId: 1935321
+bundleId: 1940727
 url: https://stluongxd.shinyapps.io/homicide-report/
-when: 1552444186.79698
+when: 1552599614.30922
 asMultiple: FALSE
 asStatic: FALSE

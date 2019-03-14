@@ -16,7 +16,7 @@ shinyUI(
         purpose # prints our purpose for using this dataset
       ),
       tabPanel(
-        tags$h2("About us"),
+        tags$h2("About Us"),
         # Information about each of our members
         about_steven,
         about_maya,
