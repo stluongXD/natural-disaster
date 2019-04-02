@@ -86,7 +86,7 @@ shinyUI(
       ),
       # creates a new tab
       tabPanel(
-        tags$h2("Murder's Relationship With Victim Vs. The Weapon"),
+        tags$h2("Murderer's Relationship With Victim Vs. The Weapon"),
         sidebarLayout(
 
           # Side panel to select race
@@ -95,7 +95,7 @@ shinyUI(
             # select relationship
             selectInput(
               "relation",
-              label = "Murder's Relationship",
+              label = "Murderer's Relationship",
               choices = unique(homicide_circumstance$Relationship),
               selected = "Husband"
             ),
@@ -105,7 +105,7 @@ shinyUI(
             # select age range
             sliderInput(
               "age",
-              label = "Murder's Age",
+              label = "Murderer's Age",
               min = range(homicide_circumstance$OffAge)[1],
               max = range(homicide_circumstance$OffAge)[2],
               value = range(homicide_circumstance$OffAge)

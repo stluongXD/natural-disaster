@@ -91,7 +91,7 @@ about_maya <- tags$div(
 about_terra <- tags$div(
   tags$h3(tags$b("Terra Huang")),
   tags$img(src = "TerraPic.jpg", width = "250px", height = "150px"),
-  tags$p(tags$b("Year:"), "Communications"),
+  tags$p(tags$b("Major:"), "Communications"),
   tags$p(tags$b("Year:"), "Sophomore"),
   tags$p(
     "Info 201 has me the skills to create visualization for 
@@ -101,7 +101,7 @@ about_terra <- tags$div(
 about_kirara <- tags$div(
   tags$h3(tags$b("Kirara Nagatsuka")),
   tags$img(src = "KiraraPic.jpg", width = "150px", height = "150px"),
-  tags$p(tags$b("Year:"), "Communications"),
+  tags$p(tags$b("Major:"), "Communications"),
   tags$p(tags$b("Year:"), "Junior"),
   tags$p("Info 201 taught me how to visualize data.")
 )
